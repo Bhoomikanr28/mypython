@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniworld - Zoo Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to AniWorld - Zoo Management</h1>
+
+    <h2>Animal Data</h2>
+    <table>
+        <tr>
+            <th>Animal ID</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Health Status</th>
+            <th>Date Acquired</th>
+        </tr>
+        <tr><td>ZL1</td><td>Leo</td><td>Lion</td><td>8</td><td>Male</td><td>Healthy</td><td>2016-05-12</td></tr>
+        <tr><td>ZZ1</td><td>Zara</td><td>Zebra</td><td>5</td><td>Female</td><td>Healthy</td><td>2019-08-21</td></tr>
+        <tr><td>ZE1</td><td>Ellie</td><td>Elephant</td><td>15</td><td>Female</td><td>Healthy</td><td>2012-11-02</td></tr>
+        <tr><td>ZM1</td><td>Milo</td><td>Monkey</td><td>2</td><td>Male</td><td>Healthy</td><td>2022-06-14</td></tr>
+        <tr><td>ZG1</td><td>Bella</td><td>Giraffe</td><td>7</td><td>Female</td><td>Healthy</td><td>2016-02-10</td></tr>
+        <tr><td>ZT1</td><td>Max</td><td>Tiger</td><td>4</td><td>Male</td><td>Injured</td><td>2020-09-15</td></tr>
+        <tr><td>ZP1</td><td>Molly</td><td>Panda</td><td>3</td><td>Female</td><td>Healthy</td><td>2021-12-03</td></tr>
+        <tr><td>ZC1</td><td>Charlie</td><td>Cheetah</td><td>10</td><td>Male</td><td>Healthy</td><td>2014-03-07</td></tr>
+        <tr><td>ZP1</td><td>Sasha</td><td>Penguin</td><td>1</td><td>Female</td><td>Healthy</td><td>2023-03-18</td></tr>
+        <tr><td>ZB1</td><td>Rocky</td><td>Bear</td><td>6</td><td>Male</td><td>Healthy</td><td>2017-10-22</td></tr>
+        <tr><td>ZK1</td><td>Fluffy</td><td>Koala</td><td>5</td><td>Female</td><td>Healthy</td><td>2018-11-04</td></tr>
+        <tr><td>ZL2</td><td> Simba</td><td>Lion</td><td>9</td><td>Male</td><td>Healthy</td><td>2014-08-12</td></tr>
+        <tr><td>ZT2</td><td>Rajah</td><td>Tiger</td><td>7</td><td>Female</td><td>Healthy</td><td>2015-06-05</td></tr>
+        <tr><td>ZG2</td><td>Zuri</td><td>Giraffe</td><td>4</td><td>Female</td><td>Healthy</td><td>2020-03-30</td></tr>
+        <tr><td>ZC2</td><td>Tango</td><td>Cheetah</td><td>6</td><td>Male</td><td>Healthy</td><td>2018-07-09</td></tr>
+        <tr><td>ZE2</td><td>Sophie</td><td>Elephant</td><td>12</td><td>Female</td><td>Healthy</td><td>2013-10-14</td></tr>
+        <tr><td>ZM2</td><td>Gizmo</td><td>Monkey</td><td>3</td><td>Male</td><td>Healthy</td><td>2021-01-22</td></tr>
+        <tr><td>ZP2</td><td>Penny</td><td>Panda</td><td>2</td><td>Female</td><td>Healthy</td><td>2022-04-19</td></tr>
+        <tr><td>ZL3</td><td>Leo Jr.</td><td>Lion</td><td>1</td><td>Male</td><td>Healthy</td><td>2023-10-01</td></tr>
+        <tr><td>ZL4</td><td>Nala</td><td>Lion</td><td>7</td><td>Female</td><td>Healthy</td><td>2016-02-15</td></tr>
+        <tr><td>ZP3</td><td>Maverick</td><td>Penguin</td><td>2</td><td>Male</td><td>Healthy</td><td>2022-05-23</td></tr>
+        <tr><td>ZB3</td><td>Coco</td><td>Bear</td><td>8</td><td>Female</td><td>Healthy</td><td>2015-01-01</td></tr>
+        <tr><td>ZK3</td><td>Buddy</td><td>Koala</td><td>6</td><td>Male</td><td>Healthy</td><td>2017-07-14</td></tr>
+        <tr><td>ZZ2</td><td>Rusty</td><td>Zebra</td><td>4</td><td>Male</td><td>Healthy</td><td>2019-12-30</td></tr>
+        <tr><td>ZE3</td><td>Tinkerbell</td><td>Elephant</td><td>11</td><td>Female</td><td>Healthy</td><td>2014-02-10</td></tr>
+        <tr><td>ZC3</td><td>Rocket</td><td>Cheetah</td><td>5</td><td>Male</td><td>Healthy</td><td>2018-03-22</td></tr>
+        <tr><td>ZP3</td><td>Sandy</td><td>Penguin</td><td>1</td><td>Female</td><td>Healthy</td><td>2023-06-17</td></tr>
+        <tr><td>ZG3</td><td>Gira</td><td>Giraffe</td><td>5</td><td>Female</td><td>Healthy</td><td>2018-09-18</td></tr>
+        <tr><td>ZT3</td><td>Flash</td><td>Tiger</td><td>8</td><td>Male</td><td>Healthy</td><td>2015-11-03</td></tr>
+        <tr><td>ZL5</td><td>Lulu</td><td>Lion</td ```html
+<td>3</td><td>Female</td><td>Healthy</td><td>2021-02-28</td></tr>
+        <tr><td>ZL6</td><td>Sheru</td><td>Lion</td><td>4</td><td>Male</td><td>Healthy</td><td>2020-01-20</td></tr>
+        <tr><td>ZZ3</td><td>Zara</td><td>Zebra</td><td>6</td><td>Female</td><td>Unhealthy</td><td>2018-06-13</td></tr>
+        <tr><td>ZE4</td><td>Gajendra</td><td>Elephant</td><td>13</td><td>Male</td><td>Healthy</td><td>2011-05-25</td></tr>
+        <tr><td>ZM3</td><td>Babloo</td><td>Monkey</td><td>2</td><td>Male</td><td>Unhealthy</td><td>2023-04-08</td></tr>
+        <tr><td>ZG4</td><td>Rani</td><td>Giraffe</td><td>9</td><td>Female</td><td>Healthy</td><td>2014-09-18</td></tr>
+        <tr><td>ZT4</td><td>Kali</td><td>Tiger</td><td>6</td><td>Female</td><td>Unhealthy</td><td>2017-01-14</td></tr>
+        <tr><td>ZP4</td><td>Madhuri</td><td>Panda</td><td>7</td><td>Female</td><td>Healthy</td><td>2016-04-05</td></tr>
+        <tr><td>ZC4</td><td>Rajeev</td><td>Cheetah</td><td>4</td><td>Male</td><td>Unhealthy</td><td>2020-10-17</td></tr>
+        <tr><td>ZP5</td><td>Ravi</td><td>Penguin</td><td>3</td><td>Male</td><td>Healthy</td><td>2021-03-11</td></tr>
+        <tr><td>ZB4</td><td>Shankar</td><td>Bear</td><td>8</td><td>Male</td><td>Healthy</td><td>2014-08-30</td></tr>
+        <tr><td>ZK4</td><td>Chintu</td><td>Koala</td><td>2</td><td>Female</td><td>Healthy</td><td>2023-01-17</td></tr>
+        <tr><td>ZL7</td><td>Bheem</td><td>Lion</td><td>5</td><td>Male</td><td>Healthy</td><td>2018-07-04</td></tr>
+        <tr><td>ZT5</td><td>Pavitra</td><td>Tiger</td><td>9</td><td>Female</td><td>Unhealthy</td><td>2013-12-22</td></tr>
+        <tr><td>ZG5</td><td>Neelam</td><td>Giraffe</td><td>10</td><td>Male</td><td>Healthy</td><td>2012-06-03</td></tr>
+        <tr><td>ZC5</td><td>Nashit</td><td>Cheetah</td><td>7</td><td>Female</td><td>Healthy</td><td>2015-11-06</td></tr>
+        <tr><td>ZE5</td><td>Moti</td><td>Elephant</td><td>10</td><td>Female</td><td>Unhealthy</td><td>2014-01-30</td></tr>
+        <tr><td>ZM4</td><td>Kalu</td><td>Monkey</td><td>6</td><td>Male</td><td>Healthy</td><td>2017-04-22</td></tr>
+        <tr><td>ZP6</td><td>Alisha</td ```html
+<td>Panda</td><td>5</td><td>Female</td><td>Healthy</td><td>2017-08-15</td></tr>
+        <tr><td>ZB5</td><td>Raghav</td><td>Bear</td><td>9</td><td>Male</td><td>Healthy</td><td>2012-12-19</td></tr>
+        <tr><td>ZK5</td><td>Juno</td><td>Koala</td><td>4</td><td>Female</td><td>Unhealthy</td><td>2020-05-09</td></tr>
+        <tr><td>ZZ4</td><td>Lalitha</td><td>Zebra</td><td>5</td><td>Female</td><td>Healthy</td><td>2018-09-25</td></tr>
+        <tr><td>ZT6</td><td>Bajrang</td><td>Tiger</td><td>10</td><td>Male</td><td>Healthy</td><td>2013-03-14</td></tr>
+        <tr><td>ZP7</td><td>Veda</td><td>Penguin</td><td>6</td><td>Female</td><td>Unhealthy</td><td>2021-07-01</td></tr>
+        <tr><td>ZL8</td><td>Chintu</td><td>Lion</td><td>3</td><td>Male</td><td>Healthy</td><td>2021-09-04</td></tr>
+        <tr><td>ZG6</td><td>Jasmine</td><td>Giraffe</td><td>5</td><td>Female</td><td>Healthy</td><td>2017-11-19</td></tr>
+    </table>
+
+    <h2>Staff Data</h2>
+    <table>
+        <tr>
+            <th>Staff ID</th>
+            <th>First Name</th>
+            <th>Position</th>
+            <th>Gender</th>
+            <th>Birth Date</th>
+            <th>Hire Date</th>
+            <th>Salary</th>
+        </tr>
+        <tr><td>Z001</td><td>Alice Johnson</td><td>Zookeeper</td><td>Female</td><td>1985-11-14</td><td>2010-06-01</td><td>3200.00</td></tr>
+        <tr><td>Z002</td><td>Bob Smith</td><td>Veterinarian</td><td>Male</td><td>1978-05-21</td><td>2015-09-03</td><td>4500.00</td></tr>
+        <tr><td>Z003</td><td>Carlos Lopez</td><td>Manager</td><td>Male</td><td>1990-02-17</td><td>2018-01-10</td><td>5000.00</td></tr>
+        <tr><td>Z004</td><td>Sarah Davis</td><td>Zookeeper</td><td>Female</td><td>1992-07-23</td><td>2017-11-01</td><td>3100.00</td></tr>
+        <tr><td>Z005</td><td>David Miller</td><td>Veterinarian</td><td>Male</td><td>1980-09-05</td><td>2013-03-19</td><td>4600.00</td></tr>
+        <tr><td>Z006</td><td>Emily Clark</td><td>Zookeeper</td><td>Female</td><td>1989-12-14</td><td>2019-07-01</td><td>3300.00</td></tr>
+        <tr><td>Z007</td><td>Frank Williams</td><td>Zookeeper</td><td>Male</td><td>1983-04-30</td><td>2014-02-25</td><td>3400.00</td></tr>
+        <tr><td>Z008</td><td>Grace Lee</td><td>Veterinarian</td><td>Female</td><td>1987-10-12</td><td>2016 -05-14</td><td>4800.00</td></tr>
+        <tr><td>Z009</td><td>Henry Brown</td><td>Zookeeper</td><td>Male</td><td>1995-01-02</td><td>2020-04-30</td><td>3000.00</td></tr>
+        <tr><td>Z010</td><td>Isabel Garcia</td><td>Manager</td><td>Female</td><td>1984-08-21</td><td>2016-09-15</td><td>5200.00</td></tr>
+        <tr><td>Z011</td><td>George White</td><td>Zookeeper</td><td>Male</td><td>1992-10-05</td><td>2020-03-01</td><td>3300.00</td></tr>
+        <tr><td>Z012</td><td>Laura Knight</td><td>Veterinarian</td><td>Female</td><td>1984-11-17</td><td>2011-07-14</td><td>4700.00</td></tr>
+        <tr><td>Z013</td><td>Kevin Black</td><td>Zookeeper</td><td>Male</td><td>1989-02-22</td><td>2015-09-28</td><td>3350.00</td></tr>
+        <tr><td>Z014</td><td>Monica Taylor</td><td>Veterinarian</td><td>Female</td><td>1991-08-13</td><td>2017-01-19</td><td>4600.00</td></tr>
+        <tr><td>Z015</td><td>Richard Green</td><td>Zookeeper</td><td>Male</td><td>1986-03-07</td><td>2014-11-09</td><td>3250.00</td></tr>
+        <tr><td>Z016</td><td>Sophia Mitchell</td><td>Manager</td><td>Female</td><td>1982-05-28</td><td>2018-08-12</td><td>5100.00</td></tr>
+        <tr><td>Z017</td><td>Oscar Adams</td><td>Zookeeper</td><td>Male</td><td>1993-04-19</td><td>2021-05-10</td><td>3200.00</td></tr>
+        <tr><td>Z018</td><td>Julia Scott</td><td>Veterinarian</td><td>Female</td><td>1987-07-02</td><td>2015-10-21</td><td>4900.00</td></tr>
+        <tr><td>Z019</td><td>Tom Robinson</td><td>Zookeeper</td><td>Male</td><td>1990-11-25</td><td>2019-04-11</td><td>3100.00</td></tr>
+    </table>
+
+    <h2>Visitor Data</h2>
+    <table>
+        <tr>
+            <th>Visitor ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <tr><td>V000000001</td><td>Aarav</td><td>Sharma</td><td>1992-03-15</td><td>aarav.sharma@email.com</td><td>9876543210</td></tr>
+        <tr><td>V000000002</td><td>Isha</td><td>Patel</td><td>1988-07-22</td><td>isha.patel@email.com</td><td>9123456789</td></tr>
+        <tr><td>V000000003</td><td>Ravi</td><td>Kumar</td><td>1995-11-05</td><td>ravi.kumar@email.com</td><td>9876501234</td></tr>
+        <tr><td>V000000004</td><td>Priya</td><td>Mehta</td><td>1990-02-14</td><td >priya.mehta@email.com</td><td>9988776655</td></tr>
+        <tr><td>V000000005</td><td>Rajesh</td><td>Verma</td><td>1987-09-30</td><td>rajesh.verma@email.com</td><td>9876541234</td></tr>
+        <tr><td>V000000006</td><td>Ananya</td><td>Desai</td><td>1993-06-25</td><td>ananya.desai@email.com</td><td>9123567890</td></tr>
+        <tr><td>V000000007</td><td>Vishal</td><td>Patil</td><td>1991-01-10</td><td>vishal.patil@email.com</td><td>9988771122</td></tr>
+        <tr><td>V000000008</td><td>Neha</td><td>Reddy</td><td>1994-04-11</td><td>neha.reddy@email.com</td><td>9888773344</td></tr>
+        <tr><td>V000000009</td><td>Saurabh</td><td>Gupta</td><td>1986-10-17</td><td>saurabh.gupta@email.com</td><td>9001234567</td></tr>
+        <tr><td>V000000010</td><td>Sonali</td><td>Jain</td><td>1989-05-13</td><td>sonali.jain@email.com</td><td>9445456789</td></tr>
+        <tr><td>V000000011</td><td>Vikram</td><td>Singh</td><td>1997-08-21</td><td>vikram.singh@email.com</td><td>8887766555</td></tr>
+        <tr><td>V000000012</td><td>Deepika</td><td>Chopra</td><td>1992-12-30</td><td>deepika.chopra@email.com</td><td>9876548765</td></tr>
+        <tr><td>V000000013</td><td>Shivani</td><td>Kumari</td><td>1991-11-11</td><td>shivani.kumari@email.com</td><td>9944556677</td></tr>
+        <tr><td>V000000014</td><td>Siddharth</td><td>Rao</td><td>1990-01-25</td><td>siddharth.rao@email.com</td><td>9000123456</td></tr>
+        <tr><td>V000000015</td><td>Meera</td><td>Nair</td><td>1993-05-04</td><td>meera.nair@email.com</td><td>9111222333</td></tr>
+        <tr><td>V000000016</td><td>Karan</td><td>Gupta</td><td>1995-09-19</td><td>karan.gupta@email.com</td><td>9601234567</td></tr>
+        <tr><td>V000000017</td><td>Simran</td><td>Singh</td><td>1988-02-10</td><td>simran.singh@email.com</td><td>8877882345</td></tr>
+        <tr><td>V000000018</td><td>Anil</td><td>Kumar</td><td>1990-12-15</td><td>anil.kumar@email.com</td><td>8777894455</td></tr>
+        <tr><td>V000000019</td><td>Madhavi</td><td>Shukla</td><td>1987-03-17</td><td>madhavi.shukla@email.com</td><td>9798982345</td></tr>
+        <tr><td>V000000020</td><td>Nikhil</td><td>Malhotra</td><td>1996-07-08</td><td>nikhil.malhotra@email.com</td><td>9001234567</td></tr>
+        <tr>< td>V000000021</td><td>Radhika</td><td>Sharma</td><td>1994-09-22</td><td>radhika.sharma@email.com</td><td>9999888777</td></tr>
+        <tr><td>V000000022</td><td>Manoj</td><td>Bansal</td><td>1989-06-11</td><td>manoj.bansal@email.com</td><td>9023445566</td></tr>
+        <tr><td>V000000023</td><td>Tanya</td><td>Singh</td><td>1992-11-03</td><td>tanya.singh@email.com</td><td>9033344555</td></tr>
+        <tr><td>V000000024</td><td>Kriti</td><td>Mishra</td><td>1985-12-18</td><td>kriti.mishra@email.com</td><td>9976657788</td></tr>
+        <tr><td>V000000025</td><td>Arjun</td><td>Thakur</td><td>1990-10-02</td><td>arjun.thakur@email.com</td><td>9388221133</td></tr>
+        <tr><td>V000000026</td><td>Aditi</td><td>Sharma</td><td>1988-04-27</td><td>aditi.sharma@email.com</td><td>9122334455</td></tr>
+        <tr><td>V000000027</td><td>Yash</td><td>Soni</td><td>1996-07-17</td><td>yash.soni@email.com</td><td>9876782345</td></tr>
+        <tr><td>V000000028</td><td>Riya</td><td>Bhatia</td><td>1995-03-25</td><td>riya.bhatia@email.com</td><td>9678877665</td></tr>
+        <tr><td>V000000029</td><td>Raj</td><td>Yadav</td><td>1989-01-01</td><td>raj.yadav@email.com</td><td>9887664455</td></tr>
+        <tr><td>V000000030</td><td>Vandana</td><td>Gupta</td><td>1990-06-15</td><td>vandana.gupta@email.com</td><td>9743322111</td></tr>
+        <tr><td>V000000031</td><td>Aditya</td><td>Verma</td><td>1997-02-11</td><td>aditya.verma@email.com</td><td>9500123456</td></tr>
+        <tr><td>V000000032</td><td>Kavita</td><td>Kapoor</td><td>1992-10-29</td><td>kavita.kapoor@email.com</td><td>9333445566</td></tr>
+        <tr><td>V000000033</td><td>Ashwin</td><td>Kumar</td><td>1993-05-18</td><td>ashwin.kumar@email.com</td><td>9344332211</td></tr>
+        <tr><td>V000000034</td><td>Meenal</td><td>Rani</td><td>1996-07-30</td><td>meenal.rani@email.com</td><td>9678567890</td></tr>
+        <tr><td>V000000035</td><td>Ankit</td><td>Gupta</td><td>1988-09-05</td><td>ankit.gupta@email.com</td><td>9121223344</td></tr>
+        <tr><td>V000000036</td><td>Sonal</td><td>Shukla</td><td>1990-08-13</td><td>sonal.shukla@email.com</td><td>9655544333</td></tr>
+        <tr><td>V000000037</td><td>Akshay</td><td>Jha</td><td>1992-11-23</td><td>ak shay.jha@email.com</td><td>9776655444</td></tr>
+        <tr><td>V000000038</td><td>Bhavana</td><td>Mehta</td><td>1994-04-02</td><td>bhavana.mehta@email.com</td><td>9488766655</td></tr>
+        <tr><td>V000000039</td><td>Kunal</td><td>Reddy</td><td>1989-01-17</td><td>kunal.reddy@email.com</td><td>9200112233</td></tr>
+        <tr><td>V000000040</td><td>Sanya</td><td>Patel</td><td>1995-02-25</td><td>sanya.patel@email.com</td><td>9088776655</td></tr>
+        <tr><td>V000000041</td><td>Nisha</td><td>Bansal</td><td>1990-03-22</td><td>nisha.bansal@email.com</td><td>9133112233</td></tr>
+        <tr><td>V000000042</td><td>Rohit</td><td>Jain</td><td>1986-12-10</td><td>rohit.jain@email.com</td><td>9344115566</td></tr>
+        <tr><td>V000000043</td><td>Pooja</td><td>Kumari</td><td>1991-01-12</td><td>pooja.kumari@email.com</td><td>9611223344</td></tr>
+        <tr><td>V000000044</td><td>Sanjay</td><td>Thakur</td><td>1993-10-05</td><td>sanjay.thakur@email.com</td><td>9476655443</td></tr>
+        <tr><td>V000000045</td><td>Nidhi</td><td>Verma</td><td>1994-06-30</td><td>nidhi.verma@email.com</td><td>9203445566</td></tr>
+        <tr><td>V000000046</td><td>Lalit</td><td>Singh</td><td>1988-04-04</td><td>lalit.singh@email.com</td><td>9098776655</td></tr>
+        <tr><td>V000000047</td><td>Rupal</td><td>Patel</td><td>1990-08-16</td><td>rupal.patel@email.com</td><td>9635577888</td></tr>
+        <tr><td>V000000048</td><td>Sandeep</td><td>Yadav</td><td>1992-01-03</td><td>sandeep.yadav@email.com</td><td>9834456677</td></tr>
+        <tr><td>V000000049</td><td>Shubham</td><td>Gupta</td><td>1995-11-23</td><td>shubham.gupta@email.com</td><td>9888776654</td></tr>
+        <tr><td>V000000050</td><td>Kriti</td><td>Mishra</td><td>1987-05-19</td><td>kriti.mishra@email.com</td><td>9006778899</td></tr>
+        <tr><td>V000000051</td><td>Oliver</td><td>Davis</td><td>1990-09-15</td><td>oliver.davis@email.com</td><td>+49-170-1234567</td></tr>
+        <tr><td>V000000052</td><td>Amelia</td><td>Garcia</td><td>1987-07-07</td><td>amelia.garcia@email.com</td><td>+49-30-12345678</td></tr>
+        <tr><td>V000000053</td><td>James</td><td>Martinez</td><td>1992-12-02</td><td>james.martinez@email.com</td><td>+34-612-345-678</td></tr>
+        <tr><td>V000000 ```html
+054</td><td>Isabella</td><td>Hernandez</td><td>1989-01-18</td><td>isabella.hernandez@email.com</td><td>+34-912-345-678</td></tr>
+        <tr><td>V000000055</td><td>Benjamin</td><td>Lopez</td><td>1983-04-23</td><td>benjamin.lopez@email.com</td><td>+39-06-98200100</td></tr>
+        <tr><td>V000000056</td><td>Charlotte</td><td>Gonzalez</td><td>1995-02-11</td><td>charlotte.gonzalez@email.com</td><td>+39-335-1234567</td></tr>
+        <tr><td>V000000057</td><td>Jack</td><td>Wilson</td><td>1986-03-27</td><td>jack.wilson@email.com</td><td>+61-2-9376-5432</td></tr>
+        <tr><td>V000000058</td><td>Olivia</td><td>Moore</td><td>1993-10-08</td><td>olivia.moore@email.com</td><td>+61-4-1991-2345</td></tr>
+        <tr><td>V000000059</td><td>Harry</td><td>Taylor</td><td>1984-05-20</td><td>harry.taylor@email.com</td><td>+44-7915-654321</td></tr>
+        <tr><td>V000000060</td><td>Evelyn</td><td>Anderson</td><td>1991-12-05</td><td>evelyn.anderson@email.com</td><td>+44-7302-765432</td></tr>
+        <tr><td>V000000061</td><td>Aiden</td><td>Thomas</td><td>1997-11-11</td><td>aiden.thomas@email.com</td><td>+1-305-555-0199</td></tr>
+        <tr><td>V000000062</td><td>Chloe</td><td>Jackson</td><td>1992-06-17</td><td>chloe.jackson@email.com</td><td>+1-646-555-0123</td></tr>
+        <tr><td>V000000063</td><td>Ethan</td><td>White</td><td>1985-09-09</td><td>ethan.white@email.com</td><td>+44-7964-123456</td></tr>
+        <tr><td>V000000064</td><td>Lily</td><td>Harris</td><td>1988-01-30</td><td>lily.harris@email.com</td><td>+1-212-555-0145</td></tr>
+        <tr><td>V000000065</td><td>Mason</td><td>Scott</td><td>1990-04-15</td><td>mason.scott@email.com</td><td>+1-213-555-0147</td></tr>
+        <tr><td>V000000066</td><td>Ella</td><td>King</td><td>1994-12-22</td><td>ella.king@email.com</td><td>+1-415-555-0135</td></tr>
+        <tr><td>V000000067</td><td>Sebastian</td><td>Green</td><td>1989-08-05</td><td>sebastian.green@email.com</td><td>+44-7531-234567</td></tr>
+        <tr><td>V000000068</td><td>Zoe</td><td>Adams</td><td>1992-09-30</td><td>zoe.adams@email.com</td><td>+44-7878-123456</td></tr>
+        <tr><td>V000000069</td><td>Oliver</td><td>Wright</td><td>1995-06-20</td><td>oliver.wright@email.com</td><td>+1-212-555 ```html
+0234</td></tr>
+        <tr><td>V000000070</td><td>Sophia</td><td>Lopez</td><td>1993-01-10</td><td>sophia.lopez@email.com</td><td>+1-718-555-0345</td></tr>
+        <tr><td>V000000071</td><td>Isaiah</td><td>Young</td><td>1988-11-02</td><td>isaiah.young@email.com</td><td>+44-7915-876543</td></tr>
+        <tr><td>V000000072</td><td>Chloe</td><td>Hernandez</td><td>1991-10-22</td><td>chloe.hernandez@email.com</td><td>+1-323-555-0456</td></tr>
+        <tr><td>V000000073</td><td>Ava</td><td>Garcia</td><td>1986-07-15</td><td>ava.garcia@email.com</td><td>+34-712-345-678</td></tr>
+        <tr><td>V000000074</td><td>Lucas</td><td>Martinez</td><td>1994-01-30</td><td>lucas.martinez@email.com</td><td>+39-334-2345678</td></tr>
+        <tr><td>V000000075</td><td>Liam</td><td>Davis</td><td>1989-04-06</td><td>liam.davis@email.com</td><td>+61-3-9123-5678</td></tr>
+        <tr><td>V000000076</td><td>Madeline</td><td>Wilson</td><td>1992-11-21</td><td>madeline.wilson@email.com</td><td>+1-416-555-0456</td></tr>
+        <tr><td>V000000077</td><td>Charlotte</td><td>Roberts</td><td>1996-10-10</td><td>charlotte.roberts@email.com</td><td>+44-7921-456789</td></tr>
+        <tr><td>V000000078</td><td>Benjamin</td><td>Parker</td><td>1990-05-16</td><td>benjamin.parker@email.com</td><td>+39-331-6543210</td></tr>
+        <tr><td>V000000079</td><td>Grace</td><td>Taylor</td><td>1993-12-08</td><td>grace.taylor@email.com</td><td>+34-602-345-678</td></tr>
+        <tr><td>V000000080</td><td>Lily</td><td>Jackson</td><td>1987-08-23</td><td>lily.jackson@email.com</td><td>+1-646-555-0654</td></tr>
+        <tr><td>V000000081</td><td>Mia</td><td>Clark</td><td>1991-06-02</td><td>mia.clark@email.com</td><td>+1-718-555-0789</td></tr>
+        <tr><td>V000000082</td><td>Mason</td><td>Evans</td><td>1995-01-25</td><td>mason.evans@email.com</td><td>+44-7465-123456</td></tr>
+        <tr><td>V000000083</td><td>Elijah</td><td>Nelson</td><td>1989-10-09</td><td>elijah.nelson@email.com</td><td>+39-335-6789012</td></tr>
+        <tr><td>V000000084</td><td>Aria</td><td>Wang</td><td>1996-02-15</td><td>aria.wang@email.com</td><td>+34-622-234-567</td></tr>
+        <tr><td>V000000085</td><td>Henry</td><td>Mitchell</td><td>1993-07-01</td ```html
+<td>henry.mitchell@email.com</td><td>+44-7748-123456</td></tr>
+        <tr><td>V000000086</td><td>Ella</td><td>Thompson</td><td>1988-05-18</td><td>ella.thompson@email.com</td><td>+1-212-555-0567</td></tr>
+        <tr><td>V000000087</td><td>Theo</td><td>Garcia</td><td>1994-08-09</td><td>theo.garcia@email.com</td><td>+34-633-444-555</td></tr>
+        <tr><td>V000000088</td><td>Maya</td><td>Rodriguez</td><td>1990-03-11</td><td>maya.rodriguez@email.com</td><td>+1-818-555-0890</td></tr>
+        <tr><td>V000000089</td><td>Jack</td><td>Baker</td><td>1986-06-28</td><td>jack.baker@email.com</td><td>+44-7512-456789</td></tr>
+        <tr><td>V000000090</td><td>Scarlett</td><td>Gonzalez</td><td>1992-04-14</td><td>scarlett.gonzalez@email.com</td><td>+1-305-555-0942</td></tr>
+        <tr><td>V000000091</td><td>Oliver</td><td>Taylor</td><td>1993-03-05</td><td>oliver.taylor@email.com</td><td>+61-7-2345-6789</td></tr>
+        <tr><td>V000000092</td><td>Sophia</td><td>Harris</td><td>1991-09-13</td><td>sophia.harris@email.com</td><td>+44-7921-765432</td></tr>
+        <tr><td>V000000093</td><td>James</td><td>Wilson</td><td>1988-12-12</td><td>james.wilson@email.com</td><td>+39-334-7654321</td></tr>
+        <tr><td>V000000094</td><td>Gabriel</td><td>Johnson</td><td>1995-11-05</td><td>gabriel.johnson@email.com</td><td>+34-617-765-432</td></tr>
+        <tr><td>V000000095</td><td>Amelia</td><td>Brown</td><td>1989-01-24</td><td>amelia.brown@email.com</td><td>+1-202-555-1234</td></tr>
+        <tr><td>V000000096</td><td>Leah</td><td>Miller</td><td>1992-10-06</td><td>leah.miller@email.com</td><td>+1-718-555-0987</td></tr>
+    </table>
+
+    <h2>Ticket Data</h2>
+    <table>
+        <tr>
+            <th>Ticket ID</th>
+            <th>Visitor ID</th>
+            <th>Purchase Date</th>
+            <th>Ticket Type</th>
+            <th>Price</th>
+        </tr>
+        <tr><td>TCKT001</td><td>V000000001</td><td>2023-01-01</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT002</td><td>V000000002</td><td>2023-01-02</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT003</td><td>V000000003</td><td>2023-01-03</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT004</td><td>V000000004</td><td>2023-01-04</td><td>Student</td><td>550.00</td></tr>
+        ```html
+        <tr><td>TCKT005</td><td>V000000005</td><td>2023-01-05</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT006</td><td>V000000006</td><td>2023-01-06</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT007</td><td>V000000007</td><td>2023-01-07</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT008</td><td>V000000008</td><td>2023-01-08</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT009</td><td>V000000009</td><td>2023-01-09</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT010</td><td>V000000010</td><td>2023-01-10</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT011</td><td>V000000011</td><td>2023-01-11</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT012</td><td>V000000012</td><td>2023-01-12</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT013</td><td>V000000013</td><td>2023-01-13</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT014</td><td>V000000014</td><td>2023-01-14</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT015</td><td>V000000015</td><td>2023-01-15</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT016</td><td>V000000016</td><td>2023-01-16</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT017</td><td>V000000017</td><td>2023-01-17</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT018</td><td>V000000018</td><td>2023-01-18</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT019</td><td>V000000019</td><td>2023-01-19</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT020</td><td>V000000020</td><td>2023-01-20</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT021</td><td>V000000021</td><td>2023-01-21</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT022</td><td>V000000022</td><td>2023-01-22</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT023</td><td>V000000023</td><td>2023-01-23</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT024</td><td>V000000024</td><td>2023-01-24</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT025</td><td>V000000025</td><td>2023-01-25</td><td>Adult</td ```html
+<td>750.00</td></tr>
+        <tr><td>TCKT026</td><td>V000000026</td><td>2023-01-26</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT027</td><td>V000000027</td><td>2023-01-27</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT028</td><td>V000000028</td><td>2023-01-28</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT029</td><td>V000000029</td><td>2023-01-29</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT030</td><td>V000000030</td><td>2023-01-30</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT031</td><td>V000000031</td><td>2023-01-31</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT032</td><td>V000000032</td><td>2023-02-01</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT033</td><td>V000000033</td><td>2023-02-02</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT034</td><td>V000000034</td><td>2023-02-03</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT035</td><td>V000000035</td><td>2023-02-04</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT036</td><td>V000000036</td><td>2023-02-05</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT037</td><td>V000000037</td><td>2023-02-06</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT038</td><td>V000000038</td><td>2023-02-07</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT039</td><td>V000000039</td><td>2023-02-08</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT040</td><td>V000000040</td><td>2023-02-09</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT041</td><td>V000000041</td><td>2023-02-10</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT042</td><td>V000000042</td><td>2023-02-11</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT043</td><td>V000000043</td><td>2023-02-12</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT044</td><td>V000000044</td><td>2023-02-13</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT045</td><td>V000000045</td><td>2023-02-14</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT046</td><td>V000000046</td><td>2023-02 ```html
+-15</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT047</td><td>V000000047</td><td>2023-02-16</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT048</td><td>V000000048</td><td>2023-02-17</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT049</td><td>V000000049</td><td>2023-02-18</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT050</td><td>V000000050</td><td>2023-02-19</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT051</td><td>V000000051</td><td>2023-02-20</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT052</td><td>V000000052</td><td>2023-02-21</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT053</td><td>V000000053</td><td>2023-02-22</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT054</td><td>V000000054</td><td>2023-02-23</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT055</td><td>V000000055</td><td>2023-02-24</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT056</td><td>V000000056</td><td>2023-02-25</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT057</td><td>V000000057</td><td>2023-02-26</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT058</td><td>V000000058</td><td>2023-02-27</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT059</td><td>V000000059</td><td>2023-02-28</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT060</td><td>V000000060</td><td>2023-03-01</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT061</td><td>V000000061</td><td>2023-03-02</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT062</td><td>V000000062</td><td>2023-03-03</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT063</td><td>V000000063</td><td>2023-03-04</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT064</td><td>V000000064</td><td>2023-03-05</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT065</td><td>V000000065</td><td>2023-03-06</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT066</td><td>V000000066</td><td>2023-03-07</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT067</td><td>V000 ```html
+000067</td><td>2023-03-08</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT068</td><td>V000000068</td><td>2023-03-09</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT069</td><td>V000000069</td><td>2023-03-10</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT070</td><td>V000000070</td><td>2023-03-11</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT071</td><td>V000000071</td><td>2023-03-12</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT072</td><td>V000000072</td><td>2023-03-13</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT073</td><td>V000000073</td><td>2023-03-14</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT074</td><td>V000000074</td><td>2023-03-15</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT075</td><td>V000000075</td><td>2023-03-16</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT076</td><td>V000000076</td><td>2023-03-17</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT077</td><td>V000000077</td><td>2023-03-18</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT078</td><td>V000000078</td><td>2023-03-19</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT079</td><td>V000000079</td><td>2023-03-20</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT080</td><td>V000000080</td><td>2023-03-21</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT081</td><td>V000000081</td><td>2023-03-22</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT082</td><td>V000000082</td><td>2023-03-23</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT083</td><td>V000000083</td><td>2023-03-24</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT084</td><td>V000000084</td><td>2023-03-25</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT085</td><td>V000000085</td><td>2023-03-26</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT086</td><td>V000000086</td><td>2023-03-27</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT087</td><td>V000000087</td><td>2023-03-28</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td ```html
+>TCKT088</td><td>V000000088</td><td>2023-03-29</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT089</td><td>V000000089</td><td>2023-03-30</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT090</td><td>V000000090</td><td>2023-03-31</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT091</td><td>V000000091</td><td>2023-04-01</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT092</td><td>V000000092</td><td>2023-04-02</td><td>Student</td><td>550.00</td></tr>
+        <tr><td>TCKT093</td><td>V000000093</td><td>2023-04-03</td><td>Adult</td><td>750.00</td></tr>
+        <tr><td>TCKT094</td><td>V000000094</td><td>2023-04-04</td><td>Child</td><td>600.00</td></tr>
+        <tr><td>TCKT095</td><td>V000000095</td><td>2023-04-05</td><td>Senior</td><td>700.00</td></tr>
+        <tr><td>TCKT096</td><td>V000000096</td><td>2023-04-06</td><td>Student</td><td>550.00</td></tr>
+    </table>
+
+    <h2>Unhealthy and Injured Animals</h2>
+    <table>
+        <tr>
+            <th>Animal ID</th>
+            <th>Name</th>
+            <th>Species</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Health Status</th>
+            <th>Date Admitted</th>
+        </tr>
+        <tr><td>ZT1</td><td>Max</td><td>Tiger</td><td>4</td><td>Male</td><td>Injured</td><td>2020-09-15</td></tr>
+        <tr><td>ZZ3</td><td>Zara</td><td>Zebra</td><td>6</td><td>Female</td><td>Unhealthy</td><td>2018-06-13</td></tr>
+        <tr><td>ZM3</td><td>Babloo</td><td>Monkey</td><td>2</td><td>Male</td><td>Unhealthy</td><td>2023-04-08</td></tr>
+        <tr><td>ZT4</td><td>Kali</td><td>Tiger</td><td>6</td><td>Female</td><td>Unhealthy</td><td>2017-01-14</td></tr>
+        <tr><td>ZC4</td><td>Rajeev</td><td>Cheetah</td><td>4</td><td>Male</td><td>Unhealthy</td><td>2020-10-17</td></tr>
+        <tr><td>ZP7</td><td>Veda</td><td>Penguin</td><td>6</td><td>Female</td><td>Unhealthy</td><td>2021-07-01</td></tr>
+        <tr><td>ZE5</td><td>Moti</td><td>Elephant</td><td>10</td><td>Female</td><td>Unhealthy</td><td>2014-01-30</td></tr>
+        <tr><td>ZK5</td><td>Juno</td><td>Koala</td><td>4</td><td>Female</td><td>Unhealthy</td><td>2020-05-09</td></tr>
+    </table>
+
+    <h2>Health Records</h2>
+    <table>
+        <tr>
+            <th>Record ID</th ```html
+            <th>Animal ID</th>
+            <th>Checkup Date</th>
+            <th>Vet ID</th>
+            <th>Notes</th>
+        </tr>
+        <tr><td>R001</td><td>ZT1</td><td>20-SEP-20</td><td>Z002</td><td>Injured leg</td></tr>
+        <tr><td>R002</td><td>ZZ3</td><td>15-JUN-18</td><td>Z005</td><td>General weakness</td></tr>
+        <tr><td>R003</td><td>ZM3</td><td>10-APR-23</td><td>Z008</td><td>Fever and dehydration</td></tr>
+        <tr><td>R004</td><td>ZT4</td><td>18-JAN-17</td><td>Z012</td><td>Malnutrition</td></tr>
+        <tr><td>R005</td><td>ZC4</td><td>20-OCT-20</td><td>Z014</td><td>Unstable health condition</td></tr>
+        <tr><td>R006</td><td>ZP7</td><td>05-JUL-21</td><td>Z018</td><td>Respiratory issues</td></tr>
+        <tr><td>R007</td><td>ZE5</td><td>01-FEB-14</td><td>Z002</td><td>Joint pain</td></tr>
+        <tr><td>R008</td><td>ZK5</td><td>15-MAY-20</td><td>Z012</td><td>Malnutrition</td></tr>
+    </table>
+
+    <h2>Animal Adoption</h2>
+    <table>
+        <tr>
+            <th>Adoption ID</th>
+            <th>Animal ID</th>
+            <th>Animal Name</th>
+            <th>Animal Type</th>
+            <th>Celebrity Name</th>
+            <th>Celebrity Region</th>
+            <th>Celebrity Occupation</th>
+            <th>Adoption Date</th>
+            <th>Comments</th>
+        </tr>
+        <tr><td>A001</td><td>ZL1</td><td>Leo</td><td>Lion</td><td>Rajinikanth</td><td>South Indian</td><td>Actor</td><td>2024-11-16</td><td>Adopted for conservation purposes</td></tr>
+        <tr><td>A002</td><td>ZZ1</td><td>Zara</td><td>Zebra</td><td>Deepika Padukone</td><td>North Indian</td><td>Actress</td><td>2024-11-16</td><td>Adopted for animal welfare awareness</td></tr>
+        <tr><td>A003</td><td>ZE1</td><td>Ellie</td><td>Elephant</td><td>Prabhas</td><td>South Indian</td><td>Actor</td><td>2024-11-16</td><td>To raise awareness about elephant protection</td></tr>
+        <tr><td>A004</td><td>ZM1</td><td>Milo</td><td>Monkey</td><td>Virat Kohli</td><td>North Indian</td><td>Cricketer</td><td>2024-11-16</td><td>Adopted as part of animal sanctuary project</td></tr>
+        <tr><td>A005</td><td>ZG1</td><td>Bella</td><td>Giraffe</td><td>Aamir Khan</td><td>North India</td><td>Actor</td><td>2024-11-16</td><td>For supporting wildlife protection</td></tr>
+        <tr><td>A006</td><td>ZT1</td><td>Max</td><td>Tiger</td><td>Jackie Chan</td><td>Foreigner (China)</td><td>Actor</td><td>2024-11-16</td><td>In collaboration with tiger preservation programs</td></tr>
+        <tr><td>A007</td><td>ZP1</td><td>Molly</td><td>Panda</td><td>Leonardo DiCaprio</ ```html
+<td>Foreigner (USA)</td><td>Actor, Activist</td><td>2024-11-16</td><td>Adopted for panda conservation</td></tr>
+        <tr><td>A008</td><td>ZB1</td><td>Rocky</td><td>Bear</td><td>Kamal Haasan</td><td>South Indian</td><td>Actor, Politician</td><td>2024-11-16</td><td>For rehabilitation and conservation efforts</td></tr>
+        <tr><td>A009</td><td>ZK1</td><td>Fluffy</td><td>Koala</td><td>Chris Hemsworth</td><td>Foreigner (Australia)</td><td>Actor</td><td>2024-11-16</td><td>To help with koala habitat restoration</td></tr>
+        <tr><td>A010</td><td>ZC1</td><td>Charlie</td><td>Cheetah</td><td>Salman Khan</td><td>North Indian</td><td>Actor</td><td>2024-11-16</td><td>Adopted as part of wildlife sanctuary</td></tr>
+    </table>
+
+</body>
+</html>
